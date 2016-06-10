@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAnnotations\IValidationAttribute.cs" />
     <Compile Include="DataAnnotations\StringLengthAttribute.cs" />
+    <Compile Include="DataAnnotations\ValidationAttributeBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
