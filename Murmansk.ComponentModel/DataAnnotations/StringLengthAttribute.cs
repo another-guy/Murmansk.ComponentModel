@@ -4,12 +4,12 @@ using System.ComponentModel.DataAnnotations;
 namespace Murmansk.ComponentModel.DataAnnotations
 {
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field, AllowMultiple = false)]
-    public sealed class StringLength : ValidationAttribute
+    public sealed class StringLengthAttribute : ValidationAttribute
     {
         private readonly int minLength;
         private readonly int maxLength;
 
-        public StringLength(int minLength, int maxLength)
+        public StringLengthAttribute(int minLength, int maxLength)
         {
             if (minLength > maxLength)
             {
